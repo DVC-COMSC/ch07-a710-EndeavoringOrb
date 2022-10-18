@@ -6,6 +6,10 @@ labels = ['Math', 'English', 'Physics', 'Computer']
 names = ['Bill', 'Mary']
 
 fig, ax = plt.subplots()
+ax.bar(labels,data1)
+ax.bar(labels,data2,bottom=data1)
+ax.legend(names)
+ax.set_title(label="Stacked graph for scores")
 
 # ******************************
 # Make your code
